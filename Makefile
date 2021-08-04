@@ -3,10 +3,10 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: seuyu <seuyu@student.42seoul.kr>           +#+  +:+       +#+         #
+#    By: hoylee <hoylee@student.42seoul.kr>         +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
-#    Created: 2021/05/25 19:30:48 by djeon             #+#    #+#              #
-#    Updated: 2021/07/08 17:57:28 by djeon            ###   ########.fr        #
+#    Created: 2021/08/04 23:08:17 by hoylee            #+#    #+#              #
+#    Updated: 2021/08/04 23:08:36 by hoylee           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -40,7 +40,6 @@ clean :
 
 fclean : 	clean
 			$(RM) $(NAME)
-#$(LIBFT)
 
 re : 		fclean all
 
