@@ -1,9 +1,9 @@
 CXX				= clang++
 RM				= rm -f
 CXXFLAGS		= -Wall -Wextra -Werror
-NAME			= BraiiiiiiinnnzzzZ
+NAME			= karenFilter
 
-SRCS			= main.cpp randomChump.cpp Zombie.cpp newZombie.cpp
+SRCS			= main.cpp Karen.cpp
 OBJS_DIR		= objs
 
 OBJS			= $(SRCS:%.cpp=$(OBJS_DIR)/%.o)

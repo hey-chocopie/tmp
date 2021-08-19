@@ -1,9 +1,9 @@
 CXX				= clang++
 RM				= rm -f
 CXXFLAGS		= -Wall -Wextra -Werror
-NAME			= BraiiiiiiinnnzzzZ
+NAME			= Unnecessary_violence
 
-SRCS			= main.cpp randomChump.cpp Zombie.cpp newZombie.cpp
+SRCS			= main.cpp Weapon.cpp HumanA.cpp HumanB.cpp
 OBJS_DIR		= objs
 
 OBJS			= $(SRCS:%.cpp=$(OBJS_DIR)/%.o)
