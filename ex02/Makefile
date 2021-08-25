@@ -1,9 +1,9 @@
 CXX				= clang++
 RM				= rm -f
 CXXFLAGS		= -Wall -Wextra -Werror
-NAME			= HI_THIS_IS_BRAIN
+NAME			= Now_we’re_talking
 
-SRCS			= main.cpp
+SRCS			= main.cpp Fixed.cpp
 OBJS_DIR		= objs
 
 OBJS			= $(SRCS:%.cpp=$(OBJS_DIR)/%.o)

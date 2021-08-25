@@ -1,14 +1,15 @@
-#include "Zombie.hpp"
+#include "Fixed.hpp"
 
+#include <iostream>
 int main( void )
 {
-	Zombie t("jhon");
-	t.announce();
+	Fixed a;
+	Fixed b( a );
+	Fixed c;
 
-	Zombie *save = t.newZombie("max");
-	save->announce();
-	delete save;
-
-	t.randomChump( "random" ) ;
-	t.announce();
+	c = b;
+	std::cout << a.getRawBits() << std::endl;
+	std::cout << b.getRawBits() << std::endl;
+	std::cout << c.getRawBits() << std::endl;
+	return 0;
 }

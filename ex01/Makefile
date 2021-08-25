@@ -1,9 +1,9 @@
 CXX				= clang++
 RM				= rm -f
 CXXFLAGS		= -Wall -Wextra -Werror
-NAME			=  Moar_brainz!
+NAME			= Towards_a_more_useful_fixed_point_class
 
-SRCS			= main.cpp Zombie.cpp ZombieHorde.cpp
+SRCS			= main.cpp Fixed.cpp
 OBJS_DIR		= objs
 
 OBJS			= $(SRCS:%.cpp=$(OBJS_DIR)/%.o)
