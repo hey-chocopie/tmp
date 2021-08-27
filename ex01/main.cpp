@@ -1,21 +1,38 @@
-#include "Fixed.hpp"
-#include <iostream>
-int main( void ) {
-	Fixed		a;
-	Fixed const b( 10 );
-	Fixed const c( 42.42f );
-	Fixed const d( b );
+#include "ClapTrap.hpp"
+#include "ScavTrap.hpp"
 
-	a = Fixed( 1234.4321f );
+int		main(void)
+{
+	std::cout << "==================[Constructor test]=================" << std::endl;
+	ScavTrap A;
+	ClapTrap A_tmp;
+	std::cout << std::endl;
+	ScavTrap B("hoylee");
+	std::cout << std::endl;
+	ScavTrap C(B);
+	std::cout << std::endl;
 
-	std::cout << "a is " << a << std::endl;
-	std::cout << "b is " << b << std::endl;
-	std::cout << "c is " << c << std::endl;
-	std::cout << "d is " << d << std::endl;
 
-	std::cout << "a is " << a.toInt() << " as integer" << std::endl;
-	std::cout << "b is " << b.toInt() << " as integer" << std::endl;
-	std::cout << "c is " << c.toInt() << " as integer" << std::endl;
-	std::cout << "d is " << d.toInt() << " as integer" << std::endl;
-	return 0;
+	std::cout << "==================[attack test]=================" << std::endl;
+	A.attack("lopper");
+	A_tmp.attack("lopper");
+	std::cout << std::endl;
+
+	std::cout << "==================[takeDamege test]=================" << std::endl;
+	A.takeDamage(5);
+	A_tmp.takeDamage(5);
+
+	std::cout << "==================[berepaired test]=================" << std::endl;
+	A.beRepaired(10);
+	A_tmp.beRepaired(10);
+	std::cout << std::endl;
+
+	std::cout << "==================[guardGate test]=================" << std::endl;
+	A.guardGate();
+	//A_tmp.guardGate();
+	//이건 안되겠죠?! test case
+	std::cout << std::endl;
+
+	std::cout << "==================[Destructor test]=================" << std::endl;
+
 }

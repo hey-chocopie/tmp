@@ -1,15 +1,27 @@
-#include "Fixed.hpp"
+#include "ClapTrap.hpp"
 
-#include <iostream>
-int main( void )
+int		main(void)
 {
-	Fixed a;
-	Fixed b( a );
-	Fixed c;
+	ClapTrap A("A");
+	ClapTrap B("B");
+	ClapTrap C(B);
+	std::cout << std::endl;
 
-	c = b;
-	std::cout << a.getRawBits() << std::endl;
-	std::cout << b.getRawBits() << std::endl;
-	std::cout << c.getRawBits() << std::endl;
-	return 0;
+	A.attack(B.getName());
+	A.takeDamage(6);
+	A.beRepaired(7);
+	std::cout << std::endl;
+
+	B.attack(A.getName());
+	B.takeDamage(8);
+	B.beRepaired(9);
+	std::cout << std::endl;
+
+	C.attack(A.getName());
+	C.takeDamage(10);
+	C.beRepaired(11);
+	std::cout << std::endl;
+
+	return(0);
 }
+

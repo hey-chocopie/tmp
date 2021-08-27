@@ -1,9 +1,9 @@
 CXX				= clang++
 RM				= rm -f
-CXXFLAGS		= -Wall -Wextra -Werror
-NAME			= Towards_a_more_useful_fixed_point_class
+CXXFLAGS		= -Wall -Wextra -Werror -std=c++98
+NAME			= Serena,_my_love!
 
-SRCS			= main.cpp Fixed.cpp
+SRCS			= main.cpp ClapTrap.cpp ScavTrap.cpp
 OBJS_DIR		= objs
 
 OBJS			= $(SRCS:%.cpp=$(OBJS_DIR)/%.o)
